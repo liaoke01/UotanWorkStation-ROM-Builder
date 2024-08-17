@@ -6,33 +6,43 @@ on:
       ROM_NAME_ANDROID_VERSION:
         description: 'ROM_NAME&ANDROID_VERSION (Support ROM please see Readme.md.)'
         required: true
+        default: 'RisingTech_14'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
+        default: 'xiaomi/mayfly'
       DEVICE_TREE_URL_BRANCH:
         description: 'DEVICE_TREE_URL&BRANCH'
         required: true
+        default: 'https://github.com/cupid-development/android_device_xiaomi_mayfly.git -b lineage-21'
       KERNEL_SOURCE_URL_BRANCH:
         description: 'KERNEL_SOURCE_URL&BRANCH'
         required: false
+        default: 'https://github.com/cupid-development/android_kernel_xiaomi_sm8450.git -b lineage-21'
       KERNEL_SOURCE_PATH:
         description: 'KERNEL_SOURCE_PATH'
         required: false
+        default: 'xiaomi/sm8450'
       VENDOR_BLOBS_URL_BRANCH:
         description: 'VENDOR_BLOBS_URL&BRANCH'
         required: false
+        default: 'https://github.com/crdroidandroid/proprietary_vendor_xiaomi_sm8475-common.git -b 14.0'
       COMMON_TREE_URL_BRANCH:
         description: 'COMMON_TREE_URL&BRANCH (if no common tree, leave blank)'
         required: false
+        default: ''
       COMMON_BLOBS_URL_BRANCH:
         description: 'COMMON_BLOBS_URL&BRANCH (if no common tree, leave blank)'
         required: false
+        default: ''
       COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
+        default: ''
       MAKEFILE_NAME_BUILD_TYPE:
         description: 'MAKEFILE_NAME&BUILD_TYPE'
         required: true
+        default: 'aosp_mayfly-userdebug'
 
 jobs:
   Build:
